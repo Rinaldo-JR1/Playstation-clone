@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-label',
   templateUrl: './card-label.component.html',
-  styleUrls: ['./card-label.component.css']
+  styleUrls: ['./card-label.component.css'],
 })
 export class CardLabelComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  gameLabel: string = '';
 
-  ngOnInit(): void {
-  }
+  constructor() {}
 
+  ngOnInit(): void {}
 }
